@@ -4,7 +4,14 @@ const links = document.querySelector('.links');
 
 toggleBtn.addEventListener('click', () => {
     navLinks.classList.toggle('show-links');
-    links.classList.toggle('show-links-direction');
+
+    if (links.classList.contains('show-links-direction')) {
+        setTimeout(() => {
+            links.classList.remove('show-links-direction');
+        }, 1000);
+    } else {
+        links.classList.add('show-links-direction')
+    }
 });
 
 window.addEventListener('resize', (e) => {
