@@ -17,12 +17,17 @@ a {
   color: var(--dark-gray);
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
+
 li {
   list-style-type: none;
 }
 
 li:hover {
-  font-weight: 600;
+  text-shadow: 0px 0px 1px black;
 }
 
 ul {
@@ -125,6 +130,13 @@ ul {
 
 /* hero section */
 
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .hero-img {
   padding-top: 20px;
   display: flex;
@@ -135,6 +147,48 @@ ul {
 .hero-img img {
   width: 90vw;
   height: auto;
+}
+
+.products {
+  width: 98vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-top: 50px;
+}
+
+.single-product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  height: auto;
+}
+
+.single-product img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 3px;
+  object-position: top;
+}
+
+.product-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 3px 0;
+}
+
+.product-person {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 2px 0;
+}
+
+.product-desc {
+  width: 80%;
+  text-align: center;
 }
 
 /* responsive design */
@@ -166,6 +220,37 @@ ul {
   .hero-img img {
     width: 70vw;
     height: auto;
+  }
+
+  .products {
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding-top: 50px;
+  }
+
+  .single-product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25vw;
+    height: 50vh;
+  }
+
+  .single-product img {
+    width: 80%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 3px;
+    object-position: top;
+  }
+
+  #osocze {
+    width: 42%;
   }
 }
 
