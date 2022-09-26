@@ -24,6 +24,7 @@ p {
 
 li {
   list-style-type: none;
+  height: 25px;
 }
 
 li:hover {
@@ -78,7 +79,7 @@ ul {
 }
 
 .show-links {
-  height: 205px;
+  height: 235px;
 }
 
 .show-links-direction {
@@ -135,6 +136,7 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 50px;
 }
 
 .hero-img {
@@ -189,6 +191,59 @@ ul {
 .product-desc {
   width: 80%;
   text-align: center;
+}
+
+/* footer */
+
+.footer-container {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 200px 50px 5px 50px;
+  text-align: center;
+}
+
+.footer-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding-bottom: 20px;
+}
+
+.footer-top-right-title,
+.footer-top-center-title {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  padding-bottom: 10px;
+}
+
+.footer-top-center {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-transform: capitalize;
+}
+
+.footer-top-center-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.footer-top-right-desc a {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--light-blue);
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
 }
 
 /* responsive design */
@@ -252,6 +307,22 @@ ul {
   #osocze {
     width: 42%;
   }
+
+  /* footer */
+
+.footer-top {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 30px;
+  padding-bottom: 20px;
+}
+
+.footer-top-center {
+  align-items: flex-start;
+  padding-left: 30px;
+  flex-grow: 1;
+}
 }
 
 @media screen and (min-width: 605px) {
