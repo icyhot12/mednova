@@ -36,6 +36,7 @@ ul {
 
 .nav-container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   /* shadow */
   -webkit-box-shadow: 0px 5px 10px -7px rgba(66, 68, 90, 1);
@@ -56,11 +57,31 @@ ul {
 
 .nav-links {
     padding-right: 20px;
+    flex-grow: 2;
 }
 
 /* contact */
 
+.adress {
+    padding: 0 20px;
+}
 
+.phones {
+    display: flex;
+    padding-right: 20px;
+}
+
+.phones-title {
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.numbers {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
 
 /* responsive design */
 
