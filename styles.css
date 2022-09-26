@@ -234,6 +234,10 @@ ul {
   gap: 8px;
 }
 
+.footer-top-center-links a {
+  color: var(--light-blue);
+}
+
 .footer-top-right-desc a {
   font-size: 1.2rem;
   font-weight: 600;
@@ -323,6 +327,13 @@ ul {
   padding-left: 30px;
   flex-grow: 1;
 }
+
+.footer-top-right-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 }
 
 @media screen and (min-width: 605px) {
