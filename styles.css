@@ -19,7 +19,6 @@ a {
 
 li {
   list-style-type: none;
-  text-align: center;
 }
 
 li:hover {
@@ -44,6 +43,7 @@ ul {
   -webkit-box-shadow: 0px 5px 10px -7px rgba(66, 68, 90, 1);
   -moz-box-shadow: 0px 5px 10px -7px rgba(66, 68, 90, 1);
   box-shadow: 0px 5px 10px -7px rgba(66, 68, 90, 1);
+  flex-wrap: wrap;
 }
 
 .nav-header {
@@ -51,6 +51,7 @@ ul {
   display: flex;
   align-items: center;
   padding: 0 20px 0 10px;
+  order: 1;
 }
 
 .nav-logo {
@@ -58,19 +59,47 @@ ul {
 }
 
 .nav-links {
-  padding-right: 20px;
-  flex-grow: 2;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+  order: 3;
+  flex-basis: 100%;
+  padding-left: 15px;
+}
+
+.show-links {
+  height: auto;
+  width: auto;
+}
+
+.show-links-direction {
+  display: flex;
+  flex-direction: column;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
 }
 
 /* contact */
 
+.navbar-contact {
+  display: flex;
+  align-items: center;
+  order: 2;
+}
+
 .adress {
-  padding: 0 20px;
+  display: none;
 }
 
 .phones {
   display: flex;
   padding-right: 20px;
+  flex-shrink: 0;
 }
 
 .phones-title {
@@ -89,10 +118,44 @@ ul {
   flex-direction: column;
 }
 
+/* menu toggle button */
+
+.menu-toggle {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
 /* responsive design */
 
-@media screen and (min-width: 1284px) {
+@media screen and (min-width: 1225px) {
   .nav-links {
     display: flex;
+    height: auto;
+    overflow: visible;
+    padding-right: 20px;
+    flex-grow: 2;
+    order: 1;
+    flex-basis: 0;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 605px) {
+  .adress {
+    display: flex;
+    padding: 0 20px;
+    flex-shrink: 0;
   }
 }

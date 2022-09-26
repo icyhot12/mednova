@@ -15,15 +15,41 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
   </head>
   <body>
     <nav>
       <div class="nav-container">
         <div class="nav-header">
+          <button class="menu-toggle">
+            <i class="fa-solid fa-bars fa-2x"></i>
+          </button>
           <img src="./images/logo_small.png " alt="logo" class="nav-logo" />
         </div>
+        <!-- <div class="break"></div> -->
+        <!-- adress -->
+        <div class="navbar-contact">
+          <div class="adress">
+            <a href="https://goo.gl/maps/NmFLGqkNSXpyjdgs6"
+              >Osiedle Szkolne 9, Kraków</a
+            >
+          </div>
+          <!-- phones -->
+          <div class="phones">
+            <div class="phones-title">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="numbers">
+              <a href="tel:+48512003196">512 003 196</a>
+              <a href="tel:+48504398636">504 398 636</a>
+            </div>
+          </div>
+          <!-- end of phones -->
+        </div>
+        <!-- end of adress -->
+        <!-- links -->
         <div class="nav-links">
-          <ul>
+          <ul class="links">
             <li>
               <a href="#home">strona główna</a>
             </li>
@@ -44,14 +70,7 @@
             </li>
           </ul>
         </div>
-        <div class="adress">Osiedle Szkolne 9, Kraków</div>
-        <div class="phones">
-          <div class="phones-title">Telefon:</div>
-          <div class="numbers">
-            <a href="tel:+48512003196">512 003 196</a>
-            <a href="tel:+48504398636">504 398 636</a>
-          </div>
-        </div>
+        <!-- end of links -->
       </div>
     </nav>
     <script src="./app.js"></script>
