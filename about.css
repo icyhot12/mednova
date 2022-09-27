@@ -1,3 +1,9 @@
+button {
+    background-color: white;
+    border: none;
+    transition: 0.2s;
+}
+
 .about-container {
   display: flex;
   flex-direction: column;
@@ -22,9 +28,19 @@
 
 .images-container-small {
   padding-bottom: 20px;
+  display: flex;
+  align-items: center;
 }
 .images-container-small img {
   height: 95vw;
+}
+
+.next-img:hover {
+    transform: translateX(6px);
+}
+
+.previous-img:hover {
+    transform: translateX(-6px);
 }
 
 @media screen and (min-width: 1120px) {
