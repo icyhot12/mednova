@@ -165,7 +165,7 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 80vw;
+  width: 70vw;
   height: auto;
 }
 
@@ -200,8 +200,9 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding: 200px 50px 5px 50px;
+  padding: 20px 50px 10px 50px;
   text-align: center;
+  background-color: #faf9f6;
 }
 
 .footer-top {
@@ -309,31 +310,35 @@ ul {
   }
 
   #osocze {
-    width: 42%;
+    width: 44%;
   }
 
   /* footer */
 
-.footer-top {
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 30px;
-  padding-bottom: 20px;
-}
+  .footer-container {
+    padding-left: 500px;
+    padding-right: 500px;
+  }
 
-.footer-top-center {
-  align-items: flex-start;
-  padding-left: 30px;
-  flex-grow: 1;
-}
+  .footer-top {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+    padding-bottom: 20px;
+  }
 
-.footer-top-right-desc {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
+  .footer-top-center {
+    align-items: flex-start;
+    padding-left: 30px;
+    flex-grow: 1;
+  }
 
+  .footer-top-right-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
 }
 
 @media screen and (min-width: 605px) {
