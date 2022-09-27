@@ -165,7 +165,7 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 70vw;
+  width: 50vw;
   height: auto;
 }
 
@@ -191,6 +191,10 @@ ul {
 .product-desc {
   width: 80%;
   text-align: center;
+}
+
+#fizjo {
+  height: 500px;
 }
 
 /* footer */
