@@ -1,3 +1,4 @@
+// navbar logic 
 const toggleBtn = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
 const links = document.querySelector('.links');
@@ -20,3 +21,5 @@ window.addEventListener('resize', (e) => {
         links.classList.remove('show-links-direction')
     }
 })
+
+// about image change
