@@ -30,16 +30,15 @@ const images = [
     "./images/morawiecki.jpg"
 ];
 
-let slideIndex = 1;
+let slideIndex = 0;
+const imgCont = document.querySelector('.small-img');
 
 function plusSlides(n) {
+    slideIndex += n
     if (slideIndex > 2 ) {
         slideIndex = 0
     } else if (slideIndex < 0) {
         slideIndex = 2
     }
-    slideIndex += n
-};
-
-const imgCont = document.querySelector('.small-img');
-const changeBtn = document.querySelector('.change-img');
+    imgCont.src = images[slideIndex]
+};  
