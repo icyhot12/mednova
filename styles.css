@@ -199,11 +199,17 @@ ul {
 }
 
 #fizjo {
-  height: 500px;
+  object-fit: cover;
+  width: 80vw;
 }
 
-#osocze {
-  width: 70%;
+#osocze img {
+  object-fit: cover;
+  width: 80vw;
+}
+
+.product-more {
+  color: var(--light-blue);
 }
 
 /* responsive design */
@@ -273,9 +279,14 @@ ul {
   }
 
   #osocze img {
-    width: 100%;
+    object-fit: cover;
+    width: 600px;
   }
 
+  #fizjo {
+    object-fit: cover;
+    width: 20vw;
+  }
 }
 
 @media screen and (min-width: 605px) {
@@ -286,6 +297,14 @@ ul {
   }
 
   #osocze {
-    width: 55%;
+    object-fit: cover;
+    width: 50vw;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #fizjo {
+    object-fit: cover;
+    width: 50vw;
   }
 }
