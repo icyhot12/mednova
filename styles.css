@@ -201,6 +201,10 @@ ul {
   height: 500px;
 }
 
+#osocze {
+  width: 44%;
+}
+
 /* responsive design */
 
 @media screen and (min-width: 1150px) {
@@ -245,10 +249,11 @@ ul {
   .single-product {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    width: 25vw;
+    min-width: 300px;
     height: 50vh;
+    flex-shrink: 0;
   }
 
   .single-product img {
@@ -260,7 +265,12 @@ ul {
   }
 
   #osocze {
-    width: 44%;
+    width: 35vw;
+    flex-shrink: 0;
+  }
+
+  #osocze img {
+    width: 100%;
   }
 
 }
@@ -270,5 +280,9 @@ ul {
     display: flex;
     padding: 0 20px;
     flex-shrink: 0;
+  }
+
+  #osocze {
+    width: 55%;
   }
 }
