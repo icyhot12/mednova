@@ -173,7 +173,7 @@ ul {
 }
 
 .single-product img {
-  width: 100%;
+  width: 80%;
   object-fit: cover;
   border-radius: 3px;
   object-position: top;
@@ -278,12 +278,10 @@ ul {
   }
 
   #osocze img {
-    object-fit: cover;
     width: 100%;
   }
 
   #fizjo {
-    object-fit: cover;
     width: 20vw;
   }
 }
