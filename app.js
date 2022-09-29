@@ -30,4 +30,30 @@ window.addEventListener('resize', () => {
         fizjImg.src = './images/fizjo_cut.jpg'
     } else if (window.innerWidth < 550) {
         fizjImg.src = './images/fizjo_low.jpg'
-}});
+    }
+});
+
+//footer time change
+const footer = document.querySelector('.footer-bottom');
+const year = new Date().getFullYear();
+
+footer.innerHTML = `Copyright &copy; ${year} Mednova Centrum Medyczne`
+
+//scroll link
+
+const topArrow = document.querySelector('.top-link');
+
+window.addEventListener('scroll', () => {
+    const scrollHeight = window.pageYOffset;
+
+    if (scrollHeight > 500) {
+        topArrow.classList.add('show-top-link')
+    } else if (scrollHeight < 500) {
+        topArrow.classList.remove('show-top-link')
+    }
+
+})
+
+topArrow.addEventListener('click', () => {
+    window.scrollTo(0, 0)
+})
