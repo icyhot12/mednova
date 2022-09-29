@@ -51,4 +51,4 @@ window.addEventListener('resize', () => {
         fizjImg.src = './images/fizjo_cut.jpg'
     } else if (window.innerWidth < 550) {
         fizjImg.src = './images/fizjo_low.jpg'
-}})
+}});
